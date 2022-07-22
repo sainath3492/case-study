@@ -124,3 +124,32 @@ hello3();
  cc.test =300
 
  console.log(cc);
+
+ //objects
+
+ var obj2 = {
+     xx1:"value1",
+     xx2:"value2",
+     xx3:"value3",
+     xx4:function(){},
+     xx5:["x","y"]
+ }
+
+ obj2.xx4= function(){
+     console.log("hi" + obj2.xx3)
+ }
+
+ console.log(obj2.xx4());
+
+ var tt = {
+     xx1:"team1",
+     xx2:"team2"
+ }
+
+ var x = function(obj:{xx1:string,xx2:string}){
+     console.log("anonymous function", obj.xx1)
+       console.log("anonymous function", obj.xx2)
+ }
+
+ x(tt);
+ x({xx1:"Team11",xx2:"team21"})
